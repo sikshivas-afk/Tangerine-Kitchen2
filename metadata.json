@@ -1,0 +1,5 @@
+{
+  "name": "Tangerine Kitchen",
+  "description": "An orange-themed pantry manager that tracks expiry dates and suggests recipes using Gemini AI.",
+  "requestFramePermissions": ["notifications"]
+}

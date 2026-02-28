@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-orange-50: #fffaf5;
+  --color-orange-100: #fff1e0;
+  --color-orange-200: #ffdbb5;
+  --color-orange-300: #ffc28a;
+  --color-orange-400: #ffa35c;
+  --color-orange-500: #ff7a00;
+  --color-orange-600: #ff6600;
+  --color-orange-700: #e65c00;
+  --color-orange-800: #cc5200;
+  --color-orange-900: #b34700;
+}
+
+@layer base {
+  body {
+    @apply bg-orange-100 text-orange-900 font-sans;
+    background-image: radial-gradient(circle at 2px 2px, #fdba74 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
+.orange-gradient {
+  background: linear-gradient(135deg, #ff9d4d 0%, #ff7a00 50%, #ff5500 100%);
+}
+
+.glass-card {
+  @apply bg-white/90 backdrop-blur-md border-2 border-orange-200 shadow-xl;
+}
+
+/* Custom scrollbar for orange theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-orange-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-300 rounded-full hover:bg-orange-400 transition-colors;
+}
+
